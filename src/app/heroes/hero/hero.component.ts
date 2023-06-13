@@ -16,4 +16,20 @@ export class HeroComponent {
   public getHeroDescription(): string {
     return `${this.name} - ${this.age}`;
   }
+
+  public changeHero(): void {
+    this.name = 'Spiderman';
+  }
+
+  public changeAge(): void {
+    this.age = 25;
+  }
+
+  public resetForm(): void {
+    this.name = 'ironman';
+    this.age = 45;
+    // document.querySelectorAll('h1')!.forEach( element => {
+    //   element.innerHTML = '<h1>Desde Angular</h1>'
+    // })
+  }
 }
