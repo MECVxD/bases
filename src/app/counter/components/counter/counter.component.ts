@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
     <button (click)="increaseBy(-1)">-1</button>
   `,
 })
+
 export class CounterComponent {
   public counter: number = 10;
 
